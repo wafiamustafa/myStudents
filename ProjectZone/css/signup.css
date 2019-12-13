@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background-image:url(../images/login%20background.jpg); background-repeat:no-repeat; background-size:cover;}
+
+.content{ width:1000px; margin:70px auto 0 auto;}
+
+.content .signup { width:400px; height: 420px; margin:0 auto; text-align:center; }
+
+.content .signup h1 { text-align:center; text-decoration:none; color:#fff; font-family: 'Josefin Sans', sans-serif; font-size:40px; line-height:40px; display:inline;}
+.content .signup .email { margin:10px auto 0 auto; text-align:center;}
+.content .signup .email h1{ width: 140px; height: 20px; font-size: 18px; display:inline;}
+.content .signup .email input{ width:250px; height:30px; border-radius:15px; text-align:center; opacity:.7; color:#0034AD; font-size:15px; margin:10px 0 0 0;}
+.content .signup .email input[type="checkbox"] { width: 25px; height: 41px; display: inline; float: left;}
+.content .signup .email p{ display: inline; font-size: 15px; color:white; font-weight: bold; float: left; margin: 18px 19px 35px 83px; font-family: 'Josefin Sans', sans-serif; }
+
+.content .signup .email button{ width:200px; height:50px; background-color:rgba(255,255,255,0.6); border-radius:20px; border:none; color:#0034AD;  font-size:25px; text-align:center; margin:-21px 0 0 0; font-weight: bold;}
+
+
+
+
+
+.content .login { width:150px; height:50px; border-radius:30px; background:rgba(255,255,255,.3);-moz-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; margin:0 auto 0 auto;}
+.content .login:hover { background:rgba(255,255,255,.8);}
+.content .login h1 { text-align:center; line-height:50px; text-decoration:none; color:#0030A0; font-family: 'Josefin Sans', sans-serif;}
+.content a{ text-decoration:none;}
+.content .orlogin { text-align:center; color:#FFFFFF; text-decoration:none; font-family: 'Josefin Sans', sans-serif;}
+.content .social { text-align:center;}
+.content .social img { margin:0 20px 0 20px;}

@@ -1,0 +1,351 @@
+body {
+    font-family: 'Bubblegum Sans'; 
+    margin:0;
+    padding:0;
+    background-color: #0079BF;
+    /*overflow: scroll;*/
+ }  
+
+
+/* Start Style Header Nav Bar */
+
+/* Style the navigation bar */
+.header_nav {
+  width: 100%;
+  background-color: #0067A3;
+  overflow: auto;
+  height: 50px;
+}
+
+/* Navbar links */
+.header_nav .navIcon {
+  float: left;
+  text-align: center;
+  padding: 6px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #66A4C8;
+  border-radius: 3px;
+}
+
+
+.header_nav .center{
+    position: absolute;
+    left: 45%;
+}
+
+.header_nav .right
+{
+    float: right;
+}
+
+.header_nav .right a, .icon_btn
+{
+    width: 25px;
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Navbar links on mouse-over */
+.header_nav a:hover {
+  background-color: #3385B5;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 700 pixels */
+@media screen and (max-width: 700px) {
+  .header_nav a {
+    float: none;
+    display: block;
+  }
+} 
+
+.menu{
+    list-style: none;
+    margin: 0;
+}
+
+.menu li{
+   float: left;
+}
+
+/*.menu .logout:hover > .inner_menu{
+    display: block;
+    z-index: 999;
+    visibility: visible;
+}
+
+.inner_menu
+{
+    display: none;
+    position: absolute;
+}
+
+.inner_menu li
+{
+    width: 50px;
+    height: 20px;
+    clear: both;
+}*/
+
+
+/* End Style Header Nav Bar */
+
+
+/*Start Style Board Section*/
+
+/*boards nav style */
+
+ .sidebar {
+              height: 100%; 
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color: #EBECF0; 
+              overflow-x: hidden;
+              padding-top: 30px; 
+              transition: 0.5s; 
+              border-radius: 2px;
+            }
+
+            .sidebar a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 18px;
+              color: black;
+              display: block;
+              transition: 0.3s;
+            }
+
+            .sidebar .theme {
+              height: 5px;
+              border-radius: 20px;
+              margin: 10px;;    
+            }
+
+            .sidebar .closebtn {
+              position: absolute;
+              top: 0;
+              right: 5px;
+              font-size: 29px;
+              margin-left: 30px;
+            }
+            .sidebar .closebtn:hover {
+              background-color: #EBECF0 !important;
+            }
+
+            .sidebar h4{
+                text-align: center;
+                background-color: #c9cbd3;
+                padding: 10px;
+            }
+                        
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+            @media screen and (max-height: 450px) {
+              .sidebar {padding-top: 15px;}
+              .sidebar a {font-size: 18px;}
+            }     
+/*end boards nav style*/
+.board .navIcon
+{
+  float: left;
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #66A4C8;
+  border-radius: 3px;
+}
+
+.board .navIcon:hover {
+  background-color: #3385B5;
+}
+
+.board .project_title
+{
+    background-color: #0079BF;
+    font-family: Monospace;
+    font-size: 20px;
+    font-weight: 1000;   
+}
+#fav_icon {
+    color: yellow;
+    display: none;
+}
+/*.board .project_title:hover{
+    background-color: #66A4C8 !important;
+}*/
+
+.board .board_right
+{
+    float: right;
+}
+
+.board h1{
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #597a8c;
+  font-size: 17px;
+}
+
+.pic_label
+{
+    margin-right: 5px;
+}
+
+.all_lists
+{
+    clear: both;
+    /*float: left;*/
+    overflow-x: auto;
+}
+.add_list_btn
+{
+    /*margin: 5px;
+    margin-left: 0px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #66A4C8;
+    width: 85%;
+    float: left;
+    color: #FFF;
+    display: block;
+    cursor: pointer;*/
+    
+    /*border-color: blue;
+    padding: 12px;
+    border-radius: 5px;
+    width: 85%;
+    margin-top: 20px;*/
+    
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    background-color: #66A4C8;
+    cursor: pointer;
+    color: #FFF;
+    margin: 5px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.add_list_input
+{
+    padding: 3px;
+    border-color: blue;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    background-color: #66A4C8;
+    color: black;
+    margin: 5px;
+    margin-left: 0;
+    text-align: left;
+    background-color: #FFF;
+    
+}
+
+.board .lists 
+{
+    margin-left: 7px;
+    margin-top: -13px;
+}
+
+
+li .fas{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/*.addList_btn
+{
+    background-color: #5cb54a;
+    margin: 5px;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+}*/
+
+.board ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    float: left;
+    width: 250px;
+    margin: 0 5px;
+    box-shadow: 0 8px 6px -6px black;
+    background-color: #EBECF0;
+    border-radius: 5px;
+}
+
+.list input{
+    font-family: inherit;
+    font-size: 18px;
+    background-color: #EBECF0;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-top: 0.5px solid #bcbcbc;
+}
+
+#list1, #list2, #list3, #list4, #list5, #list6, #list7, #list8, #list9, #list10
+{
+    visibility: hidden;
+}
+
+input:focus{
+    outline: none;
+}
+
+span{
+    height: 60px;
+    text-align: center;
+    width: 30px;
+    float: right;
+}
+
+#list .list_name{
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.board ul li{
+    background-color: #93a2d8;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 0 0 20px;    
+}
+
+.board .all_lists li:nth-child(2n)
+{
+    background-color: #c9cfe5;
+}
+
+.done{
+    color: gray;
+    text-decoration: line-through;
+}
+
+/*End Style Board Section*/

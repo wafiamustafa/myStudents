@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background-image:url(../images/login%20background.jpg); background-repeat:no-repeat; background-size:cover;}
+
+.content{ width:1000px; margin:100px auto 0 auto;}
+
+.content .login { width:400px; margin:0 auto; text-align:center;}
+
+/*
+.content .login:hover { background:rgba(255,255,255,.8);}
+*/
+.content .login h1 { width:400px; text-align:center; text-decoration:none; color:#fff; font-family: 'Josefin Sans', sans-serif; font-size:40px; line-height:40px; display:inline;}
+.content .login .email { margin:0 auto; text-align:center;}
+.content .login .email input{ width:300px; height:40px; border-radius:30px; text-align:center; opacity:.7; color:#0034AD; font-size:18px; margin:15px 0 0 0;}
+.content .login .email button{ width:100px; height:30px; background-color:rgba(255,255,255,0.6); border-radius:20px; border:none; color:#0034AD;  font-size:18px; text-align:center; margin:15px 0 0 0;}
+
+
+
+.content .signup { width:200px; height:50px; border-radius:30px; background:rgba(255,255,255,.3);-moz-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; margin:0 auto 0 auto;}
+
+.content .signup:hover { background:rgba(255,255,255,.8);}
+
+.content .signup h1 { text-align:center; line-height:50px; text-decoration:none; color:#0030A0; font-family: 'Josefin Sans', sans-serif;}
+
+
+.content a{ text-decoration:none;}
+
+.content .orlogin { text-align:center; color:#FFFFFF; text-decoration:none; font-family: 'Josefin Sans', sans-serif;}
+.content .social { text-align:center;}
+.content .social img { margin:0 20px 0 20px;}

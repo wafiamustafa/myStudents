@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!-- page title and meta data -->
+    <title> Your New Board - Project Zone </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Collaboration tool that manages your projects and everyday assignments in a cool visualization board. In few seconds, you will take a comprehensive idea about your project's progress.">
+    <meta name="keywords" content="project, cardboard, task lists, to do, priority, manage, progress, dashboard, visualization, team, work, collaboration">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			    crossorigin="anonymous"></script>
+    
+    <!-- window icon -->
+    <link rel="icon" href="icon.png">
+    
+    <!--link with css files -->
+    <link rel="stylesheet" type="text/css" href="css/board_styles.css">  
+    <!--link with font awesome for icons -->
+    <script src="https://kit.fontawesome.com/f11bf722c7.js" crossorigin="anonymous"></script>
+    <!--link with fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet"> 
+    
+    <!-- Offline icons -->
+    <link rel="stylesheet" type="text/css" href="css_/all.css" media="all">
+</head>
+    
+<body>
+        <!--start left side nav -->
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <h4><i class="fas fa-paint-brush"></i>Change Background</h4>
+          <a href="#" id="0079BF" class="theme" style="background-color: #0079BF" onclick="updateTheme(this.id)"></a>
+          <a href="#" id="D29034" class="theme" style="background-color: #D29034" onclick="updateTheme(this.id)"></a>
+          <a href="#" id="519839" class="theme" style="background-color: #519839" onclick="updateTheme(this.id)"></a>
+          <a href="#" id="B04632" class="theme" style="background-color: #B04632" onclick="updateTheme(this.id)"></a>
+          <a href="#" id="89609E" class="theme" style="background-color: #89609E" onclick="updateTheme(this.id)"></a>
+          <a href="#" id="CD5A91" class="theme" style="background-color: #CD5A91" onclick="updateTheme(this.id)"></a>
+          <a href="#" id="4BBF6B" class="theme" style="background-color: #4BBF6B" onclick="updateTheme(this.id)"></a>
+          <a href="#" id="00AECC" class="theme" style="background-color: #00AECC" onclick="updateTheme(this.id)"></a>
+          <a href="#" id="838C91" class="theme" style="background-color: #838C91" onclick="updateTheme(this.id)"></a>
+            
+          <h4><i class="fas fa-tasks"></i> Board History </h4>
+          <a title="future work" style="cursor: pointer">"Java" card added by you</a>
+          <a title="future work" style="cursor: pointer">"JS" card deleted by Ahmed</a>
+          <a title="future work" style="cursor: pointer">"C++" card added by Mohamed</a>
+          <a title="future work" style="cursor: pointer">"C++" card edited by you</a>
+        </div>
+        <!--end left side nav -->
+    
+    <!--start of the header nav bar -->
+    <div id="headerNav" class="header_nav">
+        
+        <div class="left">
+            <a href="#" onclick="openCloseBoards()" class="navIcon"><i class="fas fa-bars"></i> ...Show Menu</a>
+            <a href="Home%20Page.html" class="navIcon"><i class="fa fa-fw fa-home"></i></a>
+        </div>
+        
+        <div class="center">
+            <a class="navIcon"><i class="fas fa-tasks"></i> Project Zone</a>
+        </div>
+        
+        <div class="right">
+                <a href="#" onclick="addList()" class="navIcon" title="Add List"><i class="fas fa-plus"></i></a>
+                <a href="help.html" class="navIcon" title="Help"><i class="fas fa-info"></i></a>
+                <a href="#" class="navIcon" title="Future work"><i class="far fa-bell"></i></a>
+                <a href="index.html" class="navIcon" title="Logout"><i class="far fa-user"></i></a>
+        </div>     
+    </div>
+    <!--end of the header nav bar -->
+    
+    
+    <!--start of the boards sextion-->
+    <div class="board">
+        <!--start of the boards nav bar -->
+        <div class="board_left">
+            <a href="#" id="board_title" class="project_title navIcon">Your New Board</a>
+            <a href="#" class="icon_btn navIcon" id="not_fav_icon" onclick="toggle_favorite()"><i class="far fa-star"></i>
+            </a>
+            <a href="#" class="icon_btn navIcon" id="fav_icon" onclick="toggle_favorite()"><i class="fas fa-star"></i>
+            </a>
+            <h1>|</h1>
+            <a href="#" class="navIcon">Personal</a>
+            <h1>|</h1>
+            <a href="#" class="navIcon"><i class="fas fa-lock pic_label"></i> Private</a>
+            <h1>|</h1>
+            
+            <ol id="members">
+                <li style="float: left; list-style: none;"><a href="#" title="Me" class="icon_btn navIcon"><i class="far fa-user"></i></a></li>
+            </ol>
+            <a href="#" class="navIcon" onclick="addMember()">Invite</a>
+        </div>
+        
+        <!--end of the boards nav bar -->
+        
+        <!--start of the boards body -->
+        <div class="all_lists">
+        
+        
+        <table>
+            <tr>
+            <td>
+                
+               <div class="list" id="list1">
+                    <h1 id="list1_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list1_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+             <td>
+                
+               <div class="list" id="list2">
+                    <h1 id="list2_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list2_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+                 <td>
+                
+               <div class="list" id="list3">
+                    <h1 id="list3_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list3_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+                 <td>
+                
+               <div class="list" id="list4">
+                    <h1 id="list4_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list4_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+                 <td>
+                
+               <div class="list" id="list5">
+                    <h1 id="list5_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list5_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+            
+            </tr>    
+            
+            
+            <tr>
+            <td>
+                
+               <div class="list" id="list6">
+                    <h1 id="list6_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list6_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+             <td>
+                
+               <div class="list" id="list7">
+                    <h1 id="list7_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list7_ul">
+                   </ul>
+                </div> 
+                
+            </td>
+                 <td>
+                
+               <div class="list" id="list8">
+                    <h1 id="list8_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list8_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+                 <td>
+                
+               <div class="list" id="list9">
+                    <h1 id="list9_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list9_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+                 <td>
+                
+               <div class="list" id="list10">
+                    <h1 id="list10_title"></h1>
+                    <input class="new_card" type="text" placeholder="+ Add Card">
+                    <ul id="list10_ul">
+                    </ul>
+                </div> 
+                
+            </td>
+            
+            </tr> 
+            
+        </table>
+        
+        </div>
+        <!--end of the boards body -->
+        
+    </div>
+    <!--end of the boards section -->
+    
+    
+    <!-- link for external scripts -->
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

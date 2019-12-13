@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			    crossorigin="anonymous"></script>
+    
+
+  <title>Project Zone - Home Page</title>
+
+  <!-- window icon -->
+  <link rel="icon" href="icon.png">
+    
+    
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/homepage.css" rel="stylesheet">
+    
+  <!--link with font awesome for icons -->
+  <script src="https://kit.fontawesome.com/f11bf722c7.js" crossorigin="anonymous"></script>
+  <!--link with fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet"> 
+    
+  <!-- Offline icons -->
+  <link rel="stylesheet" type="text/css" href="css_/all.css" media="all">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-tasks"></i> Project Zone</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"  style="margin-right: 5px; background-color: #67A6CA;" title="New Board">
+              <a class="nav-link" href="new_board.html"><i class="fas fa-plus"></i></a>
+          </li>
+          <li class="nav-item active"  style="margin-right: 5px; background-color: #67A6CA;" title="Help">
+            <a class="nav-link" href="help.html"><i class="fas fa-info"></i></a>
+          </li>
+          <li class="nav-item active"  style="margin-right: 5px; background-color: #67A6CA;" title="Future Work">
+            <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+          </li>
+          <li class="nav-item active"  style="margin-right: 5px;background-color: #67A6CA;" title="Logout">
+            <a class="nav-link" href="index.html"><i class="far fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item" style="font-size: 20px;" id="all_boards"><i class="fas fa-border-all" style="margin-right: 10px;"></i> My Boards</a>
+          <a href="new_board.html" class="list-group-item" style="font-size: 20px;"><i class="fas fa-plus" style="margin-right: 10px;"></i> New Board</a>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+        <h5 class="boards_type" id="personal_title">Personal Boards</h5>
+        <div class="row" id="personal">
+         
+          <div class="col-lg-4 col-md-6 mb-4"> <!--Div1-->
+            <div class="card h-100"> <!--Div2-->
+              <a href="languages.html" title="Template"><div style="width: 253px; height: 50px; background-color: #0079BF"></div></a> <!--Div3-->
+              <div class="card-body"> <!--Div4-->
+                <h4 class="card-title">
+                  <a href="languages.html" title="Template">Learn a Language</a>
+                </h4>
+                <i class="fas fa-lock"></i> <h5 style="display: inline;">Private</h5>
+                <p class="card-text" style="margin-top: 10px;">The "to learn" and "learned" lists allow me to track items for study lessons. This board helps me track my progress as I learn a language and keep tabs of important steps along the way!</p>
+              </div>
+              <div class="card-footer">
+                <i class="fas fa-users"></i><p style="display: inline; margin-left: 5px;"> 3 Members</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="webDevBoard.html" title="Template"><div style="width: 253px; height: 50px; background-color: #D29034"></div></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="webDevBoard.html" title="Template">Study Web Development</a>
+                </h4>
+                <i class="fas fa-lock"></i> <h5 style="display: inline;">Private</h5>
+                <p class="card-text" style="margin-top: 10px;">Learn HTML , CSS, JavaScript, Bootstrap, JQuery, PHP</p>
+              </div>
+              <div class="card-footer">
+                <i class="fas fa-users"></i><p style="display: inline; margin-left: 5px;"> 1 Member</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+          
+          <h5 class="boards_type" style="color: gray" id="business_title">Business Boards</h5>
+          <div class="row" id="business"></div>
+          
+          <h5 class="boards_type" style="color: gray" id="education_title">Education Boards</h5>
+          <div class="row" id="education"></div>
+          
+          <h5 class="boards_type" style="color: gray" id="design_title">Design Boards</h5>
+          <div class="row" id="design"></div>
+          
+          <h5 class="boards_type" style="color: gray" id="engineering_title">Engineering Boards</h5>
+          <div class="row" id="engineering"></div>
+        
+          <h5 class="boards_type" style="color: gray" id="marketing_title">Marketing Boards</h5>
+          <div class="row" id="marketing"></div>
+          
+          <h5 class="boards_type" style="color: gray" id="hrandOp_title">HR and Operations Boards</h5>
+          <div class="row" id="hrandOp"></div>
+            
+          <h5 class="boards_type" style="color: gray" id="productivity_title">Productivity Boards</h5>
+          <div class="row" id="productivity"></div>
+          
+          <h5 class="boards_type" style="color: gray" id="productMang_title">Product Managemnt Boards</h5>
+          <div class="row" id="productMang"></div>
+          
+        <h5 class="boards_type" id="projectManagment_title" style="color: gray">Project Managment Boards</h5>
+        <div class="row" id="projectManagment">
+          </div>
+          
+          <h5 class="boards_type" id="sales_title" style="color: gray">Sales Boards</h5>
+        <div class="row" id="sales">
+        </div>
+          
+          
+          <h5 class="boards_type" style="color: gray"  id="support_title">Support Boards</h5>
+          <div class="row" id="support"></div>
+          
+          <h5 class="boards_type" style="color: gray" id="team_title">Team Managemnt Boards</h5>
+          <div class="row" id="team"></div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <!-- link for external scripts -->
+  <script type="text/javascript" src="scripts/script_home.js"></script>
+
+</body>
+
+</html>
